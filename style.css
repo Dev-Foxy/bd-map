@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    transition: .5s ease-in-out;
+    background-color: #F7FFE5;
+    overflow: hidden;
+}
+
+.container.show{
+    padding-left: 450px;
+}
+
+#panchagarh,#rangpur,#kurigram,#gaibandha,#thakurgaon,#dinajpur,#nilphamari,#lalmonirhat,#bogra,#sirajgonj,#pabna,#natore,#rajshahi,#nawabganj,#naogaon,#joypurhat,#kushtia,#jhenaidah,#magura,#jessore,#narail,#satkhira,#meherpur,#chuadanga,#khulna,#bagerhat,#bhola,#patuakhali,#barguna,#pirojpur,#jhalokathi,#barisal,#chandpur,#feni,#brahmanbaria,#comilla,#lakshmipur,#noakhali,#rangamati,#khagrachari,#chittagong,.coxbazar,#bandarban,#netrokona,#sherpur,#jamalpur,#tangail,#mymensingh,#kishoreganj,#narshingdi,#rajbari,#manikganj,#gazipur,#dhaka,#narayanganj,#munshiganj,#faridpur,#gopalganj,#madaripur,#shariatpur,#sylhet,#sunamganj,#habiganj,#moulvibazar{
+    cursor: pointer;
+}
+
+#panchagarh:hover,
+#rangpur:hover,
+#kurigram:hover,
+#gaibandha:hover,
+#thakurgaon:hover,
+#dinajpur:hover,
+#nilphamari:hover,
+#lalmonirhat:hover,
+#bogra:hover,
+#sirajgonj:hover,
+#pabna:hover,
+#natore:hover,
+#rajshahi:hover,
+#nawabganj:hover,
+#naogaon:hover,
+#joypurhat:hover,
+#kushtia:hover,
+#jhenaidah:hover,
+#magura:hover,
+#jessore:hover,
+#narail:hover,
+#satkhira:hover,
+#meherpur:hover,
+#chuadanga:hover,
+#khulna:hover,
+#bagerhat:hover,
+#bhola:hover,
+#patuakhali:hover,
+#barguna:hover,
+#pirojpur:hover,
+#jhalokathi:hover,
+#barisal:hover,
+#chandpur:hover,
+#feni:hover,
+#brahmanbaria:hover,
+#comilla:hover,
+#lakshmipur:hover,
+#noakhali:hover,
+#rangamati:hover,
+#khagrachari:hover,
+#chittagong:hover,
+.coxbazar:hover,
+#bandarban:hover,
+#netrokona:hover,
+#sherpur:hover,
+#jamalpur:hover,
+#tangail:hover,
+#mymensingh:hover,
+#kishoreganj:hover,
+#narshingdi:hover,
+#rajbari:hover,
+#manikganj:hover,
+#gazipur:hover,
+#dhaka:hover,
+#narayanganj:hover,
+#munshiganj:hover,
+#faridpur:hover,
+#gopalganj:hover,
+#madaripur:hover,
+#shariatpur:hover,
+#sylhet:hover,
+#sunamganj:hover,
+#habiganj:hover,
+#moulvibazar:hover
+{
+  fill: green;
+}
+
+.popup{
+    position: absolute;
+    height: 100vh;
+    width: 40vw;
+    top: 0;
+    left: 0;
+    background-color: #A0C49D;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+    transform: translateX(-100%);
+    overflow: hidden;
+    box-shadow: 2px 10px 10px rgba(0,0,0,0.2);
+}
+
+.popup.show{
+    transform: translateX(0);
+}
+
+.popup-container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.popup-container button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #F7FFE5;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.popup img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.popup p{
+    width: 70%;
+}
+
+a{
+    background-color: #F7FFE5;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.link{
+    margin-top: 40px;
+}
+
+.faq{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    width: 20%;
+    background-color: #A0C49D;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+    transition: .5s ease-in-out;
+    height: auto;
+}
+
+.faq.show{
+    transform: translateX(120%);
+}
+
+.author{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+    .popup.show{
+        width: 100%;
+    }
+
+    .faq{
+        display: none;
+    }
+  }
