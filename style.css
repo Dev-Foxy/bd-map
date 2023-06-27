@@ -183,6 +183,17 @@ a{
     font-weight: bold;
 }
 
+input{
+    display: none;
+}
+
+label{
+    cursor: pointer;
+    margin-bottom: 40px;
+    background-color: #A0C49D;
+    padding: 10px 20px;
+}
+
 @media only screen and (max-width: 800px) {
     .popup.show{
         width: 100%;
