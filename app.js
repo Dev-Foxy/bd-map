@@ -3,7 +3,23 @@ const popup = document.querySelector(".popup")
 const popupBody = document.querySelector(".popup-container")
 const container = document.querySelector(".container")
 const faq = document.querySelector(".faq")
+const text = document.getElementById("text")
 let selectedPart = null
+
+text.style.display = 'none'
+
+function toggleCheckbox() {
+    var checkbox = document.getElementById("change");
+  
+    // Toggle the value
+    if (checkbox.value === 'true') {
+      checkbox.value = 'false';
+      text.style.display = 'none'
+    } else {
+      checkbox.value = 'true';
+      text.style.display = 'block'
+    }
+  }
 
 bdMap.addEventListener("click",(e)=>{
     const q = e.target.id;
